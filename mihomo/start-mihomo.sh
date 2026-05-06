@@ -3,7 +3,7 @@ set -e
 
 # Пробуем оба варианта пути на случай специфики монтирования
 if [ -f "/config/mihomo.yaml" ]; then
-    CONFIG_FILE="/config/mihomo.yaml"
+    CONFIG_FILE="/config/mihomo_proxy/mihomo.yaml"
 elif [ -f "/homeassistant/mihomo.yaml" ]; then
     CONFIG_FILE="/homeassistant/mihomo.yaml"
 else
@@ -14,4 +14,4 @@ fi
 echo "Starting Mihomo with config: $CONFIG_FILE"
 
 # Запускаем БЕЗ лишних флагов, которые вызывают ошибку
-exec /app/mihomo -d /app -f "$CONFIG_FILE"
+exec /app/mihomo -d /config/mihomo_proxy -f "$CONFIG_FILE"
