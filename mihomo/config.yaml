@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Mihomo Proxy
-version: "1.2.4"
+version: "1.2.4.f"
 slug: dostwd_mihomo
 description: Mihomo (Clash.Meta) - A rule-based transparent proxy with advanced routing capabilities
 url: "https://github.com/dostwd/hassio-mihomo/tree/main/mihomo"
@@ -20,7 +20,7 @@ ports:
   7893/tcp: 7893
   9898/tcp: 9898
   9093/tcp: 9093
-  53/udp: 53
+  153/udp: 153
 ports_description:
   7890/tcp: "HTTP Proxy"
   7891/tcp: "SOCKS5 Proxy"
