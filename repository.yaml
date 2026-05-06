@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: dostwd Home Assistant Add-ons
-url: "https://github.com/ShIlVy/hassio-mihomo"
+url: "https://github.com/dostwd/hassio-mihomo"
 maintainer: dostwd
