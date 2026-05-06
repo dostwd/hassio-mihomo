@@ -10,7 +10,7 @@ RUN mkdir -p /app/ui && \
     mv metacubexd-gh-pages/* /app/ui/ && \
     rm -rf ui.zip metacubexd-gh-pages
 
-# Copy architecture-specific binary
+# Copy architecture-specific binary 
 ARG BUILD_ARCH
 COPY mihomo-${BUILD_ARCH} /app/mihomo
 COPY start-mihomo.sh /app/start-mihomo.sh
